@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function ProductList() {
   const products = [
     { id: 1, name: "Nike Air Max Pulse", price: "$150", img: "/images/product2.png" },
@@ -11,10 +13,12 @@ function ProductList() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {products.map((product) => (
           <div key={product.id} className="p-4 border rounded-lg">
-            <img
+            <Image
               src={product.img}
               alt={product.name}
-              className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-lg"
+              width={400} // You can adjust the width based on your design
+              height={300} // Adjust height for responsiveness
+              className="w-full h-auto object-cover rounded-lg"
             />
             <h3 className="mt-4 text-lg font-semibold">{product.name}</h3>
             <p className="mt-2 text-gray-600">{product.price}</p>

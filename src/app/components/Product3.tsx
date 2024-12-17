@@ -1,18 +1,21 @@
 import React from "react";
+import Image from "next/image";
 
 const FeatureImage = () => {
   return (
     <div className="relative mt-20">
       {/* Feature Text Positioned Above the Image */}
       <div className="flex justify-start ml-6 text-lg mt-0 font-semibold mb-4">
-        Don't Miss
+        Don&apos;t Miss {/* Escaped apostrophe */}
       </div>
 
       {/* Image Section */}
       <div className="relative mx-4 sm:mx-[40px]">
-        <img
+        <Image
           src="/images/produc3-image.png"
           alt="Featured Product"
+          width={1344} // Specify width for optimization
+          height={700} // Specify height for optimization
           className="w-full sm:w-[1344px] h-[400px] sm:h-[700px] object-cover"
         />
 

@@ -33,11 +33,11 @@ const CategoriesSection = () => {
 
         {/* Kids */}
         <div>
-          <h2 className="font-bold text-base sm:text-lg mb-4">Kids'</h2>
+          <h2 className="font-bold text-base sm:text-lg mb-4">Kids</h2>
           <p className="mb-2 text-sm sm:text-base">Infant & Toddler Shoes</p>
-          <p className="mb-2 text-sm sm:text-base">Kids' Shoes</p>
-          <p className="mb-2 text-sm sm:text-base">Kids' Jordan Shoes</p>
-          <p className="mb-2 text-sm sm:text-base">Kids' Basketball Shoes</p>
+          <p className="mb-2 text-sm sm:text-base">Kids Shoes</p>
+          <p className="mb-2 text-sm sm:text-base">Kids Jordan Shoes</p>
+          <p className="mb-2 text-sm sm:text-base">Kids Basketball Shoes</p>
         </div>
       </div>
     </div>
